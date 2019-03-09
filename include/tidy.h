@@ -69,6 +69,8 @@
 #include "tidyplatform.h"
 #include "tidyenum.h"
 
+typedef unsigned long ulong;
+
 #ifdef __cplusplus
 extern "C" {
 #endif
