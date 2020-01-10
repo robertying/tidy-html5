@@ -77,7 +77,7 @@ endif ()
 #------------------------------------------------------------------------
 set( LIB_TYPE STATIC )  # set default message
 
-option( BUILD_SHARED_LIB "Set OFF to NOT build shared library"     ON  )
+option( BUILD_SHARED_LIB "Set OFF to NOT build shared library"     OFF  )
 
 # Issue #326 - Allow linkage choice of console app tidy
 option( TIDY_CONSOLE_SHARED "Set ON to link with shared(DLL) lib." OFF )
@@ -126,7 +126,7 @@ endif ()
 #   prevent the console application from being built, since it can't be
 #   linked.
 #------------------------------------------------------------------------
-option( SUPPORT_CONSOLE_APP "Set OFF to build libraries only without console application support." ON )
+option( SUPPORT_CONSOLE_APP "Set OFF to build libraries only without console application support." OFF )
 
 if (SUPPORT_CONSOLE_APP)
     add_definitions ( -DSUPPORT_CONSOLE_APP=1 )
