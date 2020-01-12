@@ -77,7 +77,7 @@ endif ()
 #------------------------------------------------------------------------
 set( LIB_TYPE STATIC )  # set default message
 
-option( BUILD_SHARED_LIB "Set OFF to NOT build shared library"     OFF  )
+option( BUILD_SHARED_LIB "Set OFF to NOT build shared library"     ON  )
 
 # Issue #326 - Allow linkage choice of console app tidy
 option( TIDY_CONSOLE_SHARED "Set ON to link with shared(DLL) lib." OFF )
